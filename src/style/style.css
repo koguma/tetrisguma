@@ -1,0 +1,135 @@
+:root {
+  background-color: rgb(49, 49, 68);
+  padding: 2em;
+  padding-top: 4em;
+}
+
+BODY,
+H2,
+H3,
+H4,
+H5,
+H6,
+TH,
+TD {
+  font-family: arial, helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+H1 {
+  font-size: 3em;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bolder;
+  background-color: rgb(255, 234, 0);
+  border-radius: 0.05em;
+  padding: 0.1em 0.1em 0.1em 0.1em;
+  box-shadow: 0em 0em 0.15em rgb(107, 83, 50);
+  text-shadow: 0em 0em 1px rgb(107, 83, 50);
+  color: rgb(49, 49, 68);
+}
+
+.player {
+  background-color: rgb(255, 43, 43);
+  font-size: 1.25rem;
+  text-align: center;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+main {
+  background-color: rgb(85, 85, 87);
+  border-radius: 0.25em;
+  box-shadow: 0em 0em 0.5em rgb(61, 61, 61);
+  flex-wrap: wrap;
+  padding: 1em;
+  max-width: 400px;
+}
+
+svg {
+  border-radius: 0.1em;
+  border: 3px solid rgb(49, 49, 68);
+}
+
+svg rect {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+#svgCanvas,
+#svgCanvas2 {
+  background-color: rgb(62, 62, 62);
+}
+
+#svgPreview,
+#svgPreview2,
+#svgHolding2,
+#svgHolding {
+  background-color: rgb(62, 62, 62);
+}
+
+#info {
+  width: 160px;
+  margin-top: 1em;
+}
+
+#info > .text {
+  font-weight: bold;
+}
+
+#info2 {
+  width: 160px;
+  margin-top: 1em;
+}
+
+#info2 > .text {
+  font-weight: bold;
+}
+
+.left {
+  font-size: 1.1em;
+  float: left;
+}
+
+.right {
+  font-size: 1em;
+  float: right;
+}
+
+#gameOver,
+#gameOver2,
+#paused2,
+#paused,
+#disconnected2 {
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#paused,
+#paused2 {
+  z-index: 100;
+}
+
+#disconnected2 {
+  z-index: 200;
+}

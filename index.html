@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>FIT2102 A1 2023</title>
+  </head>
+  <body>
+    <h1>Tetris</h1>
+    <div class="flex row">
+      <div class="">
+        <h1 class="player">You</h1>
+        <main id="main" class="flex row">
+          <svg id="svgCanvas">
+            <!-- game over text box -->
+            <g id="gameOver" visibility="hidden">
+              <rect x="26" y="120" fill="white" height="48" width="149"></rect>
+              <text x="36" y="150">Game Over</text>
+            </g>
+            <g id="paused" visibility="hidden">
+              <rect x="26" y="120" fill="white" height="48" width="149"></rect>
+              <text x="58" y="150">Paused</text>
+            </g>
+          </svg>
+          <div id="sideBar" class="flex col">
+            <strong>Preview</strong>
+            <svg id="svgPreview"></svg>
+            <strong>Holding</strong>
+            <svg id="svgHolding"></svg>
+            <div id="info" class="flex col">
+              <div class="text">
+                <span class="left">Level: </span>
+                <span class="right" id="levelText">...</span>
+              </div>
+              <div class="text">
+                <span class="left">Score: </span>
+                <span class="right" id="scoreText">...</span>
+              </div>
+              <div class="text">
+                <span class="left">High: </span>
+                <span class="right" id="highScoreText">...</span>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="">
+        <h1 class="player">Opponent</h1>
+      <main id="main2" class="flex row">
+        <svg id="svgCanvas2">
+          <!-- game over text box -->
+          <g id="disconnected2" visibility="hidden">
+            <rect x="10" y="120" fill="white" height="48" width="180"></rect>
+            <text x="20" y="150">Disconnected</text>
+          </g>
+          <g id="gameOver2" visibility="hidden">
+            <rect x="26" y="120" fill="white" height="48" width="149"></rect>
+            <text x="36" y="150">Game Over</text>
+          </g>
+          <g id="paused2" visibility="hidden">
+            <rect x="26" y="120" fill="white" height="48" width="149"></rect>
+            <text x="58" y="150">Paused</text>
+          </g>
+        </svg>
+        <div id="sideBar2" class="flex col">
+          <strong>Preview</strong>
+          <svg id="svgPreview2"></svg>
+          <strong>Holding</strong>
+          <svg id="svgHolding2"></svg>
+          <div id="info2" class="flex col">
+            <div class="text">
+              <span class="left">Level: </span>
+              <span class="right" id="levelText2">...</span>
+            </div>
+            <div class="text">
+              <span class="left">Score: </span>
+              <span class="right" id="scoreText2">...</span>
+            </div>
+            <div class="text">
+              <span class="left">High: </span>
+              <span class="right" id="highScoreText2">...</span>
+            </div>
+          </div>
+        </div>
+      </main>
+      </div>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
